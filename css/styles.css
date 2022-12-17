@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-brand: #4d5ae5;
   --dark: #2e2f42;
@@ -18,16 +28,12 @@ body {
   line-height: 1.5;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
 
 .button {
   font-family: inherit;
+  display: inline-block;
+  min-width: 69px;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -74,10 +80,20 @@ ul {
   color: var(--dark);
 }
 
+.container {
+  width: 1152px;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: 5px solid peru;
+}
+
 /* hero */
 
 .hero {
   background-color: var(--dark);
+  outline: 5px solid purple;
+  text-align: center;
+  margin-bottom: 120px;
 }
 
 .hero-title {
@@ -85,6 +101,8 @@ ul {
   font-weight: 600;
   font-size: 56px;
   line-height: 1;
+  margin-top: 0;
+  margin-bottom: 48px;
 }
 
 .hero .button-primary {
@@ -95,6 +113,10 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.04em;
+  border-radius: 4px;
+  padding: 16px 32px;
+  /* border: 1px solid transparent; */
+  border: none;
 }
 
 .button-primary:hover {
@@ -108,17 +130,35 @@ ul {
 }
 
 /* adventages */
-.advantages .title {
+.advantages {
+  margin-bottom: 120px;
+}
+
+
+.advantages-ul .title {
   color: var(--dark);
   font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.advantages-ul p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* our work */
+
+.work {
+  outline: 5px solid rebeccapurple;
+  margin-bottom: 120px;
+}
+
 .work .title {
   color: var(--dark);
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
+  
 }
 
 .work-title {
@@ -126,12 +166,15 @@ ul {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* team */
 
 .team {
   background-color: var(--light);
+  outline: 5px solid brown;
 }
 
 .team-li {
@@ -150,12 +193,15 @@ ul {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* footer */
 
 .footer {
   background-color: var(--dark);
+  outline: 5px solid blue;
 }
 
 .footer-link {
@@ -172,6 +218,9 @@ ul {
 }
 
 /* portfolio */
+.portfolio {
+  outline: 5px solid orangered;
+}
 
 /* button */
 
@@ -179,10 +228,13 @@ ul {
   color: var(--primary-brand);
   background-color: var(--light);
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border-radius: 4px;
+  padding: 12px 24px;
+  border: 1px solid var(--accent);
 }
 
 .button-secondary:hover,
@@ -208,4 +260,14 @@ ul {
 
 .examples .card-title {
   font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
