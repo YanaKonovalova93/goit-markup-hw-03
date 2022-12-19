@@ -348,43 +348,21 @@ body {
   flex-wrap: wrap;
   background-color: purple;
  
-  margin-bottom: 120px;
   outline: 5px solid red;
 }
 
 .examples-li {
-  width: 360px;
-  margin-right: 24px;
-  margin-bottom: 48px;
+  
   background-color: yellowgreen;
 }
 
-.examples-li:nth-child(3n) {
-  margin-right: 0;
-}
 
-.examples-li:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
 
 .examples .examples-title {
   color: var(--dark);
 }
 
-.examples img {
-  margin-bottom: 32px;
-}
-.examples .card-title {
-  font-size: 20px;
-  margin-top: 0;
-  margin-bottom: 8px;
-  margin-left: 16px;
-}
-.examples p {
-  margin-top: 0;
-  margin-bottom: 32px;
-  margin-left: 16px;
-}
+
 
 a {
   text-decoration: none;
@@ -394,4 +372,10 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
